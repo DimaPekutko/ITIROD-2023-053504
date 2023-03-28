@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="styles/root.css">
+    <link rel="stylesheet" href="styles/elements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="container__wrap">
+            <div class="logo_wrap">
+                <div>
+                    <h1>
+                        KUFAR 2.0
+                    </h1>
+                </div>
+            </div>
+            <div class="navigation_bar">
+                <ul>
+                    <li>
+                        <a href="/home">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="/login">Login</a>
+                    </li>
+                    <li>
+                        <a href="/register">Register</a>
+                    </li>
+                    <!-- <li>IBM</li> -->
+                    <button>Create</button>
+                </ul>
+            </div>
+        </header>
+        <div class="container__hr">
+            <hr/>
+        </div>
+        <section  class="container__wrap ">
+            <aside class="sidebar">
+                <h2>Last Viewed</h2>
+                <div class="sidebar__list">
+                    <div class="sidebar__list__item">
+                        <img src="assets/grass.jpg" alt="sidebar image">
+                        <span>Product</span>
+                    </div>
+                    <div class="sidebar__list__item">
+                        <img src="assets/grass.jpg" alt="sidebar image">
+                        <span>Product</span>
+                    </div>
+                </div>
+            </aside>
+            <section id="search_page" class="page">
+                <section class="page__search_form_wrap">
+                    <form action="post">
+                        <input placeholder="Search..." type="text">
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </form>
+                </section>
+                <main class="search__page_content">
+                    <h1 id="found_items">Found 5 items:</h1>
+                    <div class="search__page_content__list">                        
+                        <div id="ghost_item" class="search__page_content___list__item">
+                            <div class="search__page_content___list__item__img_wrap">
+                                <a href="#">
+                                    <img src="assets/motocycle.jpg" alt="Item image">
+                                </a>
+                            </div>
+                            <div class="search__page_content___list__item__desc_wrap">
+                                <div class="search__page_content___list__item__desc_wrap__header">
+                                    <div>
+                                        <h1>Motocycle</h1>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Transport</h2>
+                                </div>
+                                <div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, 
+                                        consectetur adipisicing elit. Recusandae inventore 
+                                        sequi sint cupiditate consequuntur voluptate, 
+                                        incidunt non nemo cumque saepe quidem molestias totam id 
+                                        rem veniam deleniti velit architecto? Repellat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="search__page_content___list__item">
+                            <div class="search__page_content___list__item__img_wrap">
+                                <img src="assets/motocycle.jpg" alt="item image">
+                            </div>
+                            <div class="search__page_content___list__item__desc_wrap">
+                                <div class="search__page_content___list__item__desc_wrap__header">
+                                    <div>
+                                        <h1>Motocycle</h1>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            Add to cart
+                                        </button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Transport</h2>
+                                </div>
+                                <div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, 
+                                        consectetur adipisicing elit. Recusandae inventore 
+                                        sequi sint cupiditate consequuntur voluptate, 
+                                        incidunt non nemo cumque saepe quidem molestias totam id 
+                                        rem veniam deleniti velit architecto? Repellat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </main>
+            </section>
+            <section id="item_page" class="page">
+                <main>
+                    <article class="item__page_content">
+                        <div class="item__page_content__top_desc">
+                            <div class="item__page_content__top_desc__img_wrap">
+                                <img src="assets/motocycle.jpg" alt="item image"/>
+                            </div>
+                            <div class="item__page_content__top_desc__desc_wrap">
+                                    <h1>Motocycle</h1>
+                                    <p id="cat">Category: transport</p>
+                                    <p id="subcat">Sub category: vechicle</p>
+                                    <p>Owner: <span id="owner" class="accent">coffee jardin</span></p>
+                                    <p>Views: <spam class="accent2">181</span></p>
+                                    <div class="item__page_content__top_desc__desc_wrap__buttons">
+                                        <div>
+                                            <button>Add to cart</button>
+                                        </div>
+                                        <div>
+                                            <button class="accent2_btn">Call the owner</button>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="item__page_content__bottom_desc">
+                            <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident quo corrupti optio temporibus distinctio illo deserunt minima explicabo, magnam a, tenetur est! Nisi, autem voluptatum est ratione illo culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor distinctio voluptatum accusantium ipsum fugit labore provident? Rem, minus? Voluptatibus laudantium molestiae velit dolore ex excepturi exercitationem voluptatem unde necessitatibus eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi id velit reiciendis facere maiores, obcaecati, autem itaque doloremque, eligendi quia dolorem consequatur. Odio culpa autem ex quod necessitatibus laborum doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime soluta vitae pariatur non harum quibusdam natus explicabo cumque hic ullam distinctio corrupti, eaque cum quasi similique deserunt temporibus quia voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit qui, animi eum necessitatibus ratione suscipit dolorum tenetur ad culpa reiciendis? Reiciendis modi necessitatibus molestias. Error est reprehenderit hic officia. Incidunt.</p>
+                        </div>
+                    </article>
+                </main>
+            </section>
+            <section id="register_page" class="page">
+                <div>
+                    <form class="form_wrap register_form" action="POST">
+                        <h1 class="accent">Registration</h1>
+                        <div>
+                            <p>Your name:</p>
+                            <input name="name" placeholder="Name"/>
+                        </div>
+                        <div>
+                            <p>Your email:</p>
+                            <input name="email" placeholder="Email"/>
+                        </div>
+                        <div>
+                            <p>Your passoword:</p>
+                            <input name="password" placeholder="Password"/>
+                        </div>
+                        <div>
+                            <p>Repeat password:</p>
+                            <input name="repeat_password" placeholder="Repeat password"/>
+                        </div>
+                        <span>Already registered? <a href="#">Login</a></span>
+                        <span id="error" class="error"></span>
+                        <button id="submit" type="submit">Register</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        <div class="container__hr">
+            <hr/>
+        </div>
+    </div>
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>
