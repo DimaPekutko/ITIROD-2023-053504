@@ -10,32 +10,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Kufar 2.0</title>
 </head>
 <body>
     <div class="container">
-        <header class="container__wrap">
+        <header id="header" class="container__wrap">
             <div class="logo_wrap">
                 <div>
-                    <h1>
-                        KUFAR 2.0
-                    </h1>
+                    <a href="/home">
+                        <h1>
+                            KUFAR 2.0
+                        </h1>
+                    </a>
                 </div>
             </div>
             <div class="navigation_bar">
-                <ul>
-                    <li>
+                <ul id="header_navbar">
+                    <li id="catalog_li">
                         <a href="/home">Catalog</a>
                     </li>
-                    <li>
+                    <li id="catalog_li">
+                        <a href="/cart">Cart</a>
+                    </li>
+                    <li id="login_li">
                         <a href="/login">Login</a>
                     </li>
-                    <li>
+                    <li id="register_li">
                         <a href="/register">Register</a>
                     </li>
+                    <li id="user_li">
+                        <a href="#">Logout</a>
+                    </li>
                     <!-- <li>IBM</li> -->
-                    <button>Create</button>
+                    <a href="/editor">
+                        <button>Create</button>
+                    </a>
                 </ul>
+            </div>
+            <div class="burger_menu_wrap">
+                <button id="burger_menu_btn">Menu</button>
             </div>
         </header>
         <div class="container__hr">
@@ -43,22 +56,20 @@
         </div>
         <section  class="container__wrap ">
             <aside class="sidebar">
-                <h2>Last Viewed</h2>
+                <h2>Last Viewed:</h2>
                 <div class="sidebar__list">
-                    <div class="sidebar__list__item">
-                        <img src="assets/grass.jpg" alt="sidebar image">
-                        <span>Product</span>
-                    </div>
-                    <div class="sidebar__list__item">
-                        <img src="assets/grass.jpg" alt="sidebar image">
-                        <span>Product</span>
+                    <div id="ghost_item" class="sidebar__list__item">
+                        <a href="#">
+                            <img src="assets/grass.jpg" alt="sidebar image">
+                            <span>Product</span>
+                        </a>
                     </div>
                 </div>
             </aside>
             <section id="search_page" class="page">
                 <section class="page__search_form_wrap">
                     <form action="post">
-                        <input placeholder="Search..." type="text">
+                        <input name="query" placeholder="Search..." type="text">
                         <button type="submit">
                             Submit
                         </button>
@@ -78,10 +89,27 @@
                                     <div>
                                         <h1>Motocycle</h1>
                                     </div>
-                                    <div>
-                                        <button>
-                                            Add to cart
-                                        </button>
+                                    <div class="search__page_content___list__item__desc_wrap__header__buttons">
+                                        <a id="add_to_cart">
+                                            <button>
+                                                Add to cart
+                                            </button>
+                                        </a>
+                                        <a id="delete_from_cart">
+                                            <button class="error_back">
+                                                Delete from cart
+                                            </button>
+                                        </a>
+                                        <a id="update">
+                                            <button>
+                                                Update
+                                            </button>
+                                        </a>
+                                        <a id="delete">
+                                            <button class="error_back">
+                                                Delete
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div>
@@ -139,24 +167,60 @@
                                 <img src="assets/motocycle.jpg" alt="item image"/>
                             </div>
                             <div class="item__page_content__top_desc__desc_wrap">
-                                    <h1>Motocycle</h1>
-                                    <p id="cat">Category: transport</p>
-                                    <p id="subcat">Sub category: vechicle</p>
-                                    <p>Owner: <span id="owner" class="accent">coffee jardin</span></p>
-                                    <p>Views: <spam class="accent2">181</span></p>
-                                    <div class="item__page_content__top_desc__desc_wrap__buttons">
-                                        <div>
-                                            <button>Add to cart</button>
-                                        </div>
-                                        <div>
-                                            <button class="accent2_btn">Call the owner</button>
-                                        </div>
+                                <h1>Motocycle</h1>
+                                <p id="cat">Category: transport</p>
+                                <p id="subcat">Sub category: vechicle</p>
+                                <p>Owner: <span id="owner" class="accent">coffee jardin</span></p>
+                                <p>Views: <spam id="views" class="accent2">181</span></p>
+                                <div class="item__page_content__top_desc__desc_wrap__buttons">
+                                    <!-- <div>
+                                        <button>Add to cart</button>
+                                    </div> -->
+                                    <div>
+                                        <button class="accent2_btn">Call the owner</button>
                                     </div>
+                                </div>
                             </div>
                         </div>
                         <div class="item__page_content__bottom_desc">
                             <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident quo corrupti optio temporibus distinctio illo deserunt minima explicabo, magnam a, tenetur est! Nisi, autem voluptatum est ratione illo culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor distinctio voluptatum accusantium ipsum fugit labore provident? Rem, minus? Voluptatibus laudantium molestiae velit dolore ex excepturi exercitationem voluptatem unde necessitatibus eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi id velit reiciendis facere maiores, obcaecati, autem itaque doloremque, eligendi quia dolorem consequatur. Odio culpa autem ex quod necessitatibus laborum doloremque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime soluta vitae pariatur non harum quibusdam natus explicabo cumque hic ullam distinctio corrupti, eaque cum quasi similique deserunt temporibus quia voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit qui, animi eum necessitatibus ratione suscipit dolorum tenetur ad culpa reiciendis? Reiciendis modi necessitatibus molestias. Error est reprehenderit hic officia. Incidunt.</p>
                         </div>
+                    </article>
+                </main>
+            </section>
+            <section id="item_editor_page" class="page">
+                <main>
+                    <article class="item__page_content">
+                        <form id="item_editor_form">
+                            <div class="item__page_content__top_desc">
+                                <div class="item__page_content__top_desc__img_wrap">
+                                    <label class="file_upload_area" for="image_upload_input">
+                                            <img src="assets/motocycle.jpg" alt="item image"/>
+                                    </label>
+                                    <input name="image" id="image_upload_input" type="file"/>
+                                </div>
+                                <div class="item__page_content__top_desc__desc_wrap">
+                                    <b>Title: </b>
+                                    <input name="title" id="title" placeholder="Title"/> 
+                                    <b>Category: </b>
+                                    <select name="category" id="category">
+                                    </select>
+                                    <b>Sub Category: </b>
+                                    <select name="subcategory" id="subcategory">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item__page_content__bottom_desc">
+                                <br>
+                                <b>Description:</b>
+                                <textarea name="desc" placeholder="Description" id="description"></textarea>
+                            </div>
+                            <div>
+                                <p id="error" class="error"></p>
+                                <br>
+                                <button id="save" type="submit">Save</button>
+                            </div>
+                        </form>
                     </article>
                 </main>
             </section>
@@ -186,11 +250,31 @@
                     </form>
                 </div>
             </section>
+            <section id="login_page" class="page">
+                <div>
+                    <form class="form_wrap login_form" action="POST">
+                        <h1 class="accent">Login</h1>
+                        <div>
+                            <p>Your email:</p>
+                            <input name="email" placeholder="Email"/>
+                        </div>
+                        <div>
+                            <p>Your passoword:</p>
+                            <input name="password" placeholder="Password"/>
+                        </div>
+                        <span>Nox account? <a href="#">Registration</a></span>
+                        <span id="error" class="error"></span>
+                        <button id="submit" type="submit">Login</button>
+                    </form>
+                </div>
+            </section>
         </section>
-        <div class="container__hr">
+        <br>
+        <!-- <div class="container__hr">
             <hr/>
-        </div>
+        </div> -->
     </div>
+    <script src="https://js.upload.io/upload-js/v2"></script>
     <script type="module" src="src/index.js"></script>
 </body>
 </html>

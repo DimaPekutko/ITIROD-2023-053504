@@ -1,10 +1,17 @@
-import { searchPageController, itemPageController, registerPageController } from "./controllers/controllers.js"
+import { searchPageController, itemPageController, registerPageController, loginPageController, logoutController, itemEditorPageController, deleteItemController, cartPageController, addToCartController, deleteFromCartController } from "./controllers/controllers.js"
 
 
 const ROUTES = {
     'home': searchPageController,
+    'cart': cartPageController,
     'item': itemPageController,
+    'editor': itemEditorPageController,
+    'delete_item': deleteItemController,
+    'add_to_cart': addToCartController,
+    'delete_from_cart': deleteFromCartController,
     'register': registerPageController,
+    'login': loginPageController,
+    'logout': logoutController
     // '/item/{id}': itemPageController 
 }
 
@@ -32,5 +39,5 @@ export const setupLinksBindings = () => {
 
 export const initRouter = () => {
     setupLinksBindings()
-    changeLocation("/register")
+    changeLocation("/home")
 }

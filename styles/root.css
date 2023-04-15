@@ -1,5 +1,6 @@
 :root {
-    --back-color: #3A3A3A;
+    /* --back-color: #3A3A3A; */
+    --back-color: #262626;
     --back-color2: #000000;
     --primary-color: #E8E8E8;
     --accent-color: #6ADA42;
@@ -8,7 +9,7 @@
 }
 
 * {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h1, h2, h3, p {
@@ -16,12 +17,29 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+
+/* @keyframes background_animation {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+
 body {
     background: var(--back-color);
+    animation: background_animation 15s ease infinite;
     min-height: 100vh;
     color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    height: 100vh;
+
 }
 
 a {
@@ -46,6 +64,15 @@ a:hover {
 .error {
     color: var(--error-color);
     font-weight: bold;
+}
+
+.error_back {
+    background-color: var(--error-color);
+    color: var(--back-color2);
+}
+
+.file_upload_area {
+    cursor: pointer;
 }
 
 button {
@@ -78,12 +105,32 @@ input {
     padding: 5px 10px 5px 10px;
 }
 
+input[type="file"] {
+    display: none;  
+}
+
+select {
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+textarea {
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: var(--back-color);
   }
 
 hr {
-    border: 1px solid var(--back-color2);
+    border: 2.5px solid var(--back-color2);
 }
 
 header ul {
