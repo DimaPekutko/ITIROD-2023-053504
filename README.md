@@ -90,3 +90,25 @@
 
 ## Макет
 https://www.figma.com/file/cdB9MNicITEEgQZEgjFNH4/Untitled?node-id=0%3A1&t=z00czeb9pzbqHRMb-1
+
+## Installation:
+
+### Run database:
+```bash
+cd backend
+sudo docker-compose up --build
+```
+
+### Run backend server:
+```bash
+cd backend/server
+# start virtual env
+python3 -m venv .venv
+source .venv/bin/activate
+# install dependencies
+pip install -r requirements.txt
+# run
+python3 -m uvicorn main:app --port 6969 --reload
+```
+
+### Then just open index.html in the browser
