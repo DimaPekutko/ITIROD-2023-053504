@@ -6,4 +6,4 @@ export const PAGES_IDS = {
     loginPage: "login_page"
 }
 
-export const DEFAULT_IAMGE_SRC = "assets/default_image.png"
+export const DEFAULT_IMAGE_SRC = "assets/default_image.png"

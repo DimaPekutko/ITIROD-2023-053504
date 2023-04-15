@@ -1,4 +1,4 @@
-import { DEFAULT_IAMGE_SRC, PAGES_IDS } from "../consts.js"
+import { DEFAULT_IMAGE_SRC, PAGES_IDS } from "../consts.js"
 import { changeLocation, setupLinksBindings } from "../router.js"
 import { cartStore, userStore, viewHistoryStore } from "../store/store.js"
 import { fileUploader } from "../helpers.js"
@@ -189,7 +189,7 @@ const createItemEditorPageView = () => {
         
         const image = page.querySelector("img")
         console.log(data)
-        image.src = data?.item?.image_url ?? DEFAULT_IAMGE_SRC
+        image.src = data?.item?.image_url ?? DEFAULT_IMAGE_SRC
         
         const imageInput = page.querySelector("#image_upload_input")
         const catSelect = page.querySelector("#category")
